@@ -1,0 +1,14 @@
+os: linux
+dist: focal
+arch: amd64
+language: cpp
+compiler: gcc
+addons:
+  apt:
+    packages: libasound2-dev libsdl2-dev libxft-dev
+
+script:
+  - mkdir build
+  - pushd build/
+  - cmake -DUSE_SDL2=ON -G "Unix Makefiles" ..
+  - make -j$(nproc)
