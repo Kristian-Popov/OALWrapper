@@ -1,11 +1,18 @@
 OAL Wrapper Source Code
 =======================
 
+Build status, Ubuntu 20.04 x64 | [![Build Status](https://travis-ci.org/Kristian-Popov/OALWrapper.svg?branch=improvements)](https://travis-ci.org/Kristian-Popov/OALWrapper)
+----------------- | ---------------
+
 Yes, here is the OpenAL C++ Wrapper that was built and used for the Penumbra series as well as Amnesia: The Dark Descent.
 
 Read through the TODO file for various known things that should be cleaned up / fixed.
 
 Included are project files for Xcode, Cmake (for Linux).
+
+Changes specific to this port:
+* Does not use precompiled libraries from dependencies bundle, instead system libraries are used.
+* Removed most unused code from CMake file, like support of macOS, Emscripten, iOS, SDL 1
 
 Contributing Code
 -----------------

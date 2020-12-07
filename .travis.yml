@@ -5,7 +5,7 @@ language: cpp
 compiler: gcc
 addons:
   apt:
-    packages: libasound2-dev libsdl2-dev libxft-dev
+    packages: libasound2-dev libsdl2-dev libxft-dev libvorbis-dev libopenal-dev libogg-dev
 
 script:
   - mkdir build
