@@ -71,10 +71,6 @@ SET(all_includes
     include//OALWrapper/OAL_WAVSample.h
 )
 
-IF(USE_SDL2)
-    add_definitions(-DUSE_SDL2)
-ENDIF()
-
 add_library(OALWrapper STATIC
     ${all_sources}
     ${all_includes}

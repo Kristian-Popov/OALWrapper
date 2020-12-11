@@ -10,5 +10,5 @@ addons:
 script:
   - mkdir build
   - pushd build/
-  - cmake -DUSE_SDL2=ON -G "Unix Makefiles" ..
+  - cmake -G "Unix Makefiles" ..
   - make -j$(nproc)
